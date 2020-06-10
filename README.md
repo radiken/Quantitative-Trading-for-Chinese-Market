@@ -9,10 +9,7 @@ This app allows strategies writing, strategies testing by looping back, if you f
 
 Time unit in this app is **day** for now, which means operation in hour, minute, and second is not supported temporarily.
 
-About strategies:
-    Strategies include **stock selection strategy**, **buy strategy** and **sell strategy** three types of strategies, each strategy is a class instead of a function, as it can have its own attribute. 
-    
-    An individual strategy, regardless of type, is meant to by controlling a single factor, which means multiple strategies of one type can be applied at the same time, but each type needs at least one strategy.
+Strategies include **stock selection strategy**, **buy strategy** and **sell strategy** three types of strategies, each strategy is a class instead of a function, as it can have its own attribute. An individual strategy, regardless of type, is meant to by controlling a single factor, which means multiple strategies of one type can be applied at the same time, but each type needs at least one strategy.
 
 ## Requirements
 - Python 3
