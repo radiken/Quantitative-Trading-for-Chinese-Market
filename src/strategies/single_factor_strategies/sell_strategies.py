@@ -1,4 +1,4 @@
-from strategys.single_factor_strategys.single_factor_trade_strategy import single_factor_sell_strategy
+from strategies.single_factor_strategies.single_factor_trade_strategy import single_factor_sell_strategy
 import tushare as ts
 import sys
 sys.path.append("..") 

@@ -49,10 +49,10 @@ if __name__ == "__main__":
     fund_available = int(input("Please enter available fund: "))
 
     # init strategy
-    from strategys.strategy import strategy
-    from strategys.single_factor_strategys.stock_selection_strategys import example_stock_selection_strategy
-    from strategys.single_factor_strategys.buy_strategys import example_buy_strategy
-    from strategys.single_factor_strategys.sell_strategys import example_sell_strategy
+    from strategies.strategy import strategy
+    from strategies.single_factor_strategies.stock_selection_strategies import example_stock_selection_strategy
+    from strategies.single_factor_strategies.buy_strategies import example_buy_strategy
+    from strategies.single_factor_strategies.sell_strategies import example_sell_strategy
 
     last_trade_date = get_to_check_date()
     
