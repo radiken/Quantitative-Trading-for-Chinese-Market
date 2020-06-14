@@ -7,7 +7,6 @@ from info_holder import info_holder
 
 class single_factor_trade_strategy:
     def __init__(self):
-        self._names = {}
         self._pro = ts.pro_api()
         self._info_holder = info_holder()
         self._TRACE_DAY = 0
@@ -60,7 +59,7 @@ class single_factor_buy_strategy(single_factor_trade_strategy):
 
     def make_decision(self, date, stock, fund, info):
         # override this
-        logging.warning('Decision making in buy strategy have not overridden!')
+        logging.warning('Decision making in buy strategy has not been overridden!')
         return False, 0, 0
 
         
@@ -83,12 +82,14 @@ class single_factor_sell_strategy(single_factor_trade_strategy):
         try:
             info = self.get_today_info(stock, date)
         except:
-            logging.info(f"{stock} data empty on {date} for unknown error")
+            logging.info(f"{stock} data empty on {date} for unknown error!")
             return (False, 0, 0)
 
         return self.make_decision(date, stock, holding_amount, cost, buy_date, info)
 
     def make_decision(self, date, stock, holding_amount, cost, buy_date, info):
         # override this
-        logging.warning('Decision making in sell strategy have not overriden!')
+        logging.warning('Decision making in sell strategy has not been overridden!')
         return False, 0, 0
+
+

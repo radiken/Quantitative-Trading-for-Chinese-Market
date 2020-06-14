@@ -13,8 +13,6 @@ Result comes out with words on the terminal at the moment.
 Get report when finished.
 '''
 
-# 
-
 class loop_back():
     def __init__(self, strategy, fund = 100000, start_date = '20180101', end_date = '20190101', frequency = 1, exchange_fee = 0.0003):
         self._strategy = strategy

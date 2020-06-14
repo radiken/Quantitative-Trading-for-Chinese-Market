@@ -13,7 +13,6 @@ class report:
         holder = info_holder()
         self._stocks_info = holder.daily_info
         self._standard = holder.get_standard_info(start_date, end_date)
-        # self._standard = ts.pro_api().index_daily(ts_code='000001.SH', start_date = self._start_date, end_date = self._end_date)
 
     def stock_selection_analysis(self, stock_pool_history):
         empty_time = len(stock_pool_history[stock_pool_history.stock_pool == "none"])
@@ -58,10 +57,6 @@ class report:
 
 
     def trade_analysis(self, trade_history, buy_history, sell_history):
-        # try:
-        #     trade_history.to_excel("output.xlsx")
-        # except Exception as e:
-        #     print(e)
         earn_counter = 0
         lost_counter = 0
         hold_time = []

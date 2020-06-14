@@ -16,3 +16,5 @@ class example_sell_strategy(single_factor_sell_strategy):
             return True, newest_price, holding_amount
         else:
             return False, 0, 0
+
+    # extend get_data method if more information needed

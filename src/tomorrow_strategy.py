@@ -1,7 +1,6 @@
 import datetime
 import pandas as pd
 import tushare as ts
-import pytz
 from calculation import *
 
 def tomorrow_strategy(today, strategy, fund_available, hold_shares):

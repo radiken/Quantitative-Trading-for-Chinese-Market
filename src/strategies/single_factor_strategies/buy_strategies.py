@@ -12,3 +12,5 @@ class example_buy_strategy(single_factor_buy_strategy):
             return True, daily_info['close'].iloc[0], buy_portion(fund, daily_info['close'].iloc[0], 50)
         else:
             return False, 0, 0
+
+    # extend get_data method if more information needed

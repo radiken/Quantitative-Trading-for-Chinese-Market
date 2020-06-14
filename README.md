@@ -2,7 +2,9 @@
 # A股量化交易工具
 
 ## Background
-To trade systematically and find outstanding strategies, a tool for writing, testing and applying strategies is needed, this tool is thereby appeared to help traders like me.
+To trade systematically and find outstanding strategies, a tool for writing, testing and applying strategies is needed, this tool is thereby appeared to help traders like me. Hope you find this helpful for developing profitable strategies like I do. 
+
+Issues or pull requests are welcomed, would be helpful to point out bugs as well.
 
 ## Introduction
 This app allows strategies writing, strategies testing by looping back, if you find your strategy outstanding, you can get your advised operation according to your strategies in the next trade day.
@@ -29,11 +31,13 @@ Then run this file(should take a while in order to save some necessary data, but
     Write your own sell strategies in "src/strategies/single_factor_strategies/sell_strategies.py".
     Each file contains an example strategy.
 
-- loop back
+- Testing strategies
     See "src/example.py" for example of loop back process.
+    Report will be generated in command line when finished.
 
 - applying strategies
     See bottom of "src/tomorrow_strategy.py".
+    When filling in information, data format is consistent should be consistent with tushare API, e.g. stock code should be format like "601318.SH", "000725.SZ", date should be 8 digits string in YYYYMMDD format like "20191231"
 
 ## License
     GPL-3.0
